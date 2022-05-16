@@ -1,0 +1,48 @@
+.custom-container-rate h1{
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.custom-container-rate h6{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.help-text-error{
+    color: white;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.help-text-error:out-of-range{
+    visibility: visible;
+}
+
+.custom-container-rate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.custom-input{
+    margin: auto !important;
+    margin-right: 10px !important;
+}
+
+.d-flex{
+    margin-top:30px;
+}
+
+.custom-input:out-of-range{
+    border: 1px solid red !important;
+}
+
+.main{
+    height: 100%;
+}
