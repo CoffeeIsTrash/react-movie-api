@@ -20,7 +20,7 @@ export default function Search(){
     }
 
     function handleSubmit(e){
-        const url = `http://api.themoviedb.org/3/search/movie/?api_key=${API_KEY}&language=en-US&query=${searchQuery.searchQuery}&page=1&include_adult=false`;
+        const url = `https://api.themoviedb.org/3/search/movie/?api_key=${API_KEY}&language=en-US&query=${searchQuery.searchQuery}&page=1&include_adult=false`;
         e.preventDefault();
         fetch(url)
         .then(results => results.json())
@@ -51,7 +51,7 @@ export default function Search(){
                 <Row>
                     {results.map(results => 
                         <div key={results.id} className="mapped-results col-sm-3 col-sm-pull-12">
-                        <Link to={`/view/${results.id}`}>
+                        <Link to={`/view/movie/${results.id}`}>
                             <img src={`https://image.tmdb.org/t/p/w500/${results.poster_path}`} className="mapped-image" alt={results.original_title} />
                         </Link>
                         </div>
