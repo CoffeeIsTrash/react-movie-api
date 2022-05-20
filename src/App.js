@@ -18,10 +18,10 @@ export default function App() {
         </div>
         <Trending media="trending/movie" timeframe="day" link="view/movie"/>
         <Trending media="trending/movie" timeframe="week" link="view/movie" />
-        <Trending media="trending/tv" timeframe="week" link="view/tv" />
+        {/* <Trending media="trending/tv" timeframe="week" link="view/tv" /> */}
         {/* <Trending media="movie/top_rated" timeframe="week"/> */}
         <p className="legal">
-        *TV shows coming next year. &copy; {new Date().getFullYear()} David
+        &copy; {new Date().getFullYear()} David
         Buday. All rights reserved.
         </p>
         </div>
