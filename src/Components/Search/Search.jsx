@@ -41,6 +41,9 @@ export default function Search(){
                     <FormControl type="search" placeholder="Enter search term..." onChange={handleChange} className="input-search"/>
                     <Button className="custom-button" type="submit">Search</Button>
                 </Form>
+                <div className="notworking">
+                <h3>Search is unfortunately not working in a remotely deployed environment since the API in response headers returns location of HTTP.. and remotes don't like unsecure</h3>
+                </div>
             </div>
         </div>
     );
